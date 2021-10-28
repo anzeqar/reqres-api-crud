@@ -2,7 +2,7 @@ const Users = ({ users, users2 }) => {
   return (
     <div className="container">
       <h1 className="h3 text-center mt-2 pb-2">All Users</h1>
-      <ul>
+      <ul className="list-group">
         {users.map((user) => (
           <li className="list-group-item" key={user.id}>
             <div className="d-flex flex-row align-items-center">
@@ -15,7 +15,11 @@ const Users = ({ users, users2 }) => {
                 <p>First Name: {user.first_name}</p>
                 <p>Last Name: {user.last_name}</p>
                 <p>
-                  Email: <a href={`mailto:${user.email}`}>{user.email}</a>{" "}
+                  Email:
+                  <a href={`mailto:${user.email}`}>
+                    {" "}
+                    {user.email.slice(0, 8) + "..."}
+                  </a>
                 </p>
               </div>
             </div>
@@ -33,7 +37,11 @@ const Users = ({ users, users2 }) => {
                 <p>First Name: {user.first_name}</p>
                 <p>Last Name: {user.last_name}</p>
                 <p>
-                  Email: <a href={`mailto:${user.email}`}>{user.email}</a>{" "}
+                  Email:
+                  <a href={`mailto:${user.email}`}>
+                    {" "}
+                    {user.email.slice(0, 8) + "..."}
+                  </a>
                 </p>
               </div>
             </div>

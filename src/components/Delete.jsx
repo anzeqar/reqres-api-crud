@@ -21,17 +21,17 @@ const Delete = ({ config }) => {
     <div className="container">
       <h1 className="h3 text-center mt-2 pb-2">Delete User</h1>
       <form onSubmit={deleteUser}>
-        <div class="mb-3">
+        <div className="mb-3">
           <input
             type="number"
-            class="form-control"
+            className="form-control"
             id="id"
             placeholder="Enter ID"
             required={true}
           />
         </div>
 
-        <button type="submit" class="btn btn-primary w-100">
+        <button type="submit" className="btn btn-primary w-100">
           Submit
         </button>
       </form>
@@ -40,16 +40,16 @@ const Delete = ({ config }) => {
           ""
         ) : !result ? (
           <div>
-            <ul class="list-group bg-danger text-light">
-              <li class="list-group-item bg-danger text-light">
+            <ul className="list-group bg-danger text-light">
+              <li className="list-group-item bg-danger text-light">
                 Error: Cannot Delete User
               </li>
             </ul>
           </div>
         ) : (
           <div>
-            <ul class="list-group">
-              <li class="list-group-item text-center">
+            <ul className="list-group">
+              <li className="list-group-item text-center">
                 Successfully Deleted User
               </li>
             </ul>

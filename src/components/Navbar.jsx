@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container-fluid">
         <span className="navbar-brand">Reqres API CRUD</span>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -14,26 +14,26 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
+        <div className={`collapse navbar-collapse`} id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item mt-1 mb-1">
               <Link to={"/"} className="text-decoration-none pe-3">
                 All Users
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item mt-1 mb-1">
               <Link to={"/add"} className="text-decoration-none pe-3">
                 Add User
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item mt-1 mb-1">
               <Link to={"/update"} className="text-decoration-none pe-3">
                 Update User
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item mt-1 mb-1">
               <Link to={"/delete"} className="text-decoration-none pe-3">
                 Delete User
               </Link>

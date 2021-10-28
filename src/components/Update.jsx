@@ -24,35 +24,35 @@ const Update = ({ config }) => {
     <div className="container">
       <h1 className="h3 text-center mt-2 pb-2">Update User</h1>
       <form onSubmit={updateUser}>
-        <div class="mb-3">
+        <div className="mb-3">
           <input
             type="number"
-            class="form-control"
+            className="form-control"
             id="id"
             placeholder="Enter ID"
             required={true}
           />
         </div>
-        <div class="mb-3">
+        <div className="mb-3">
           <input
             type="text"
-            class="form-control"
+            className="form-control"
             id="name"
             placeholder="Enter Name"
             required={true}
           />
         </div>
-        <div class="mb-3">
+        <div className="mb-3">
           <input
             type="text"
-            class="form-control"
+            className="form-control"
             id="job"
             placeholder="Enter Job"
             required={true}
           />
         </div>
 
-        <button type="submit" class="btn btn-primary w-100">
+        <button type="submit" className="btn btn-primary w-100">
           Submit
         </button>
       </form>
@@ -62,8 +62,8 @@ const Update = ({ config }) => {
         ) : result["error"] ? (
           <div>
             <h4 className="text-center">Ooops... Error</h4>
-            <ul class="list-group bg-danger text-light">
-              <li class="list-group-item bg-danger text-light">
+            <ul className="list-group bg-danger text-light">
+              <li className="list-group-item bg-danger text-light">
                 Error: {result.error}
               </li>
             </ul>
@@ -71,10 +71,10 @@ const Update = ({ config }) => {
         ) : (
           <div>
             <h4 className="text-center pb-2">Successfully Updated User</h4>
-            <ul class="list-group">
-              <li class="list-group-item">Name: {result.name}</li>
-              <li class="list-group-item">Job: {result.job}</li>
-              <li class="list-group-item">
+            <ul className="list-group">
+              <li className="list-group-item">Name: {result.name}</li>
+              <li className="list-group-item">Job: {result.job}</li>
+              <li className="list-group-item">
                 Updated At: {String(new Date(result.updatedAt))}
               </li>
             </ul>

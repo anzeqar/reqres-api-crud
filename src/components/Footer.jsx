@@ -2,13 +2,13 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div class="footer mt-4">
-      <p class="text-dark text-center">
+    <div className="footer mt-4">
+      <p className="text-dark text-center">
         Developed by
         <span> </span>
         <a
           href="https://github.com/anzeqar"
-          class="link-info"
+          className="link-info"
           target="_blank"
           rel="noreferrer"
         >
